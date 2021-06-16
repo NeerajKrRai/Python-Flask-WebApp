@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>SoPost Order Form</title>
+    <link rel="stylesheet" id="sopost-styles-css" href="https://www.sopost.com/wp-content/themes/sopost/build/css/theme.min.css?ver=0.9.4.1623594823" media="all">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+</head>
+<script>
+</script>
+<body>
+<!--Main form which calls the API-->
+<div class="form-container">
+  <form action="/submitForm" method="POST" class="contact-form">
+    <h2>SoPost - Your online product sampling partner</h2><br><br><br><br>
+    <p>Please Provide Your contact details</p>
+
+    <input name="name" type="text" placeholder="Your name"
+        class="form-control"
+        value="{{ name }}"
+        required>
+    <input name="email" type="email" placeholder="Your email address"
+        class="form-control" value="{{ email }}"
+        required>
+    <input name="address" type="text" placeholder="Your Postal address"
+        class="form-control" value="{{ address }}"
+        required>
+
+    <button id="clicked" type="submit" class="btn btn-danger">Submit Details</button>
+    <div style="clear: both;"></div>
+  </form>
+</div>
+
+</body>
+</html>
